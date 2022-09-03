@@ -3,7 +3,7 @@
   padding: 0;
   text-decoration: auto;
   font-style: normal;
-  color: #ffffff;
+  color: var(--black);
   list-style: none;
 }
 
@@ -20,15 +20,26 @@
   src: url(src/fonts/YesevaOne-Regular.ttf);
 }
 
+:root {
+  --gold: #e3b873;
+  --white: #ffffff;
+  --black: #131313;
+}
+
+a {
+  color: var(--white);
+}
+
 body {
   font-family: "NunitoSans-Regular";
 }
 
 .header {
-  background-color: #131313;
+  background-color: var(--black);
   font-weight: 400;
   font-size: 11px;
   line-height: 15px;
+  color: var(--white);
   text-transform: uppercase;
 }
 
@@ -36,6 +47,10 @@ body {
   width: 1256px;
   max-width: 1440px;
   margin: auto;
+}
+
+main .container_new {
+  padding-left: 42px;
 }
 
 .header .container_new {
@@ -55,17 +70,18 @@ ul.menu_list li {
 
 .logo_text p,
 .phone a {
-  color: #e3b873;
+  color: var(--gold);
 }
 
 .button {
-  background: #e3b873;
+  background: var(--gold);
   font-family: "NunitoSans-Italic";
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border-radius: 2px;
   padding: 13px 40px;
   margin: 24px 0 22px;
   text-transform: uppercase;
+  color: var(--white);
 }
 
 .start {
@@ -81,8 +97,12 @@ h2.title {
   font-weight: 400;
 }
 
+.start h2 {
+  color: var(--white);
+}
+
 h2.title span {
-  color: #e3b873;
+  color: var(--gold);
 }
 
 .start .content {
@@ -92,6 +112,7 @@ h2.title span {
 .start p {
   font-size: 22px;
   line-height: 36px;
+  color: var(--white);
 }
 
 .start .button {
@@ -100,10 +121,88 @@ h2.title span {
 
 .start .button.submit {
   padding: 19px 22px;
-  color: white;
+  color: var(--white);
   border: 1px solid red;
   background: rgb(255 255 255 / 0%);
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white);
   border-radius: 2px;
   margin-left: 15px;
+}
+
+section.projects {
+  background-color: var(--black);
+  padding-bottom: 92px;
+}
+
+.projects .container_new {
+  display: flex;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.projects .info {
+  display: grid;
+  grid-template-columns: 180px 180px;
+  padding-top: 45px;
+}
+
+.projects h2 {
+  color: var(--gold);
+  font-size: 27px;
+  line-height: 37px;
+  padding: 176px 0 34px;
+}
+
+.item .info_title {
+  font-family: YesevaOne-Regular;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+.projects ul.tabs_list {
+  display: flex;
+  padding: 107px 0 50px;
+}
+
+.projects ul.tabs_list li {
+  font-family: YesevaOne-Regular;
+  color: rgba(255, 255, 255, 0.3);
+  margin-right: 30px;
+}
+
+.projects p {
+  color: var(--white);
+  font-size: 14px;
+}
+
+.projects .side_left {
+  margin-right: 50px;
+}
+
+.info .item {
+  padding-bottom: 34px;
+}
+
+.projects .nav {
+  padding-top: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  background-color: var(--white);
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0px 5px;
+}
+
+object.left_arrow {
+  margin-right: 20px;
+}
+
+object.right_arrow {
+  margin-left: 20px;
 }
