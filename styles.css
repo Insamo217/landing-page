@@ -131,7 +131,7 @@ h2.title span {
 
 section.projects {
   background-color: var(--black);
-  padding-bottom: 92px;
+  padding-bottom: 400px;
 }
 
 .projects .container_new {
@@ -205,4 +205,59 @@ object.left_arrow {
 
 object.right_arrow {
   margin-left: 20px;
+}
+
+.container_online {
+  width: 817px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.container_online p.subtitle {
+  position: relative;
+}
+
+.container_online p.subtitle:after {
+  content: url("src/svg/control.svg");
+  bottom: -45px;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.container_online img {
+  width: 100%;
+  margin-top: 70px;
+}
+
+object.play_button img {
+  width: auto;
+}
+
+object.play_button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 27%;
+}
+
+section.online_control {
+  margin-top: -344px;
+}
+
+p.subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+section.online_control P {
+  line-height: 37px;
+  font-size: 18px;
+  width: 645px;
+  margin: auto;
 }
