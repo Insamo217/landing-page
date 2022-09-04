@@ -34,6 +34,15 @@ body {
   font-family: "NunitoSans-Regular";
 }
 
+p.subtitle {
+  font-family: "YesevaOne-Regular";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .header {
   background-color: var(--black);
   font-weight: 400;
@@ -214,7 +223,8 @@ object.right_arrow {
   position: relative;
 }
 
-.container_online p.subtitle {
+section.online_control p.subtitle {
+  color: var(--white);
   position: relative;
 }
 
@@ -244,15 +254,7 @@ object.play_button {
 
 section.online_control {
   margin-top: -344px;
-}
-
-p.subtitle {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--white);
+  padding-bottom: 130px;
 }
 
 section.online_control P {
@@ -316,4 +318,46 @@ section.online_control P {
 }
 .checkbox:checked + .fake::before {
   opacity: 1;
+}
+
+section.types_of_repair p.subtitle {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+section.types_of_repair p.subtitle:after {
+  content: url("src/svg/repair.svg");
+  bottom: -45px;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+section.types_of_repair .container_new {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_type {
+  background-color: var(--white);
+  width: 330px;
+  margin: -90px auto;
+  z-index: 5;
+  position: relative;
+  padding: 20px;
+}
+
+p.info_title {
+  font-family: "YesevaOne-Regular";
+  font-size: 18px;
+  line-height: 25px;
+  color: #363636;
+}
+
+ul.type_list li {
+  font-size: 13px;
+  line-height: 27px;
+  color: #959595;
+  list-style: disc;
+  margin-left: 15px;
 }
