@@ -52,17 +52,17 @@ p.subtitle {
   text-transform: uppercase;
 }
 
-.container_new {
+.container {
   width: 1256px;
   max-width: 1440px;
   margin: auto;
 }
 
-main .container_new {
+main .container {
   padding-left: 42px;
 }
 
-.header .container_new {
+.header .container {
   justify-content: space-between;
   display: flex;
   align-items: center;
@@ -143,7 +143,7 @@ section.projects {
   padding-bottom: 400px;
 }
 
-.projects .container_new {
+.projects .container {
   display: flex;
   font-weight: 400;
   font-size: 18px;
@@ -264,7 +264,7 @@ section.online_control P {
   margin: auto;
 }
 
-.form form {
+.form_online form {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -277,14 +277,14 @@ section.online_control P {
   align-items: flex-start;
 }
 
-.form label {
+.form_online label {
   font-size: 13px;
   line-height: 21px;
   color: rgba(54, 54, 54, 0.5);
 }
 
-.form input#login_text,
-.form input#phone_num {
+.form_online input#name_text,
+.form_online input#phone_num {
   font-size: 14px;
   line-height: 23px;
   color: #363636;
@@ -293,7 +293,7 @@ section.online_control P {
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
 
-.form input.button {
+.form_online input.button {
   padding: 20px 76px;
 }
 
@@ -333,7 +333,11 @@ section.types_of_repair p.subtitle:after {
   position: absolute;
 }
 
-section.types_of_repair .container_new {
+section.types_of_repair {
+  padding-bottom: 260px;
+}
+
+section.types_of_repair .container {
   display: flex;
   justify-content: space-between;
 }
@@ -360,4 +364,91 @@ ul.type_list li {
   color: #959595;
   list-style: disc;
   margin-left: 15px;
+}
+
+section.benefits_and_form .container {
+  display: flex;
+  background-image: url("src/img/img_7.png");
+  background-repeat: no-repeat;
+  background-position-y: -35%;
+  padding-top: 65px;
+}
+
+section.benefits_and_form .benefits_list {
+  counter-reset: my-counter;
+  padding-left: 160px;
+}
+
+section.benefits_and_form .benefits_list li {
+  counter-increment: my-counter;
+  margin-bottom: 127px;
+  padding-left: 65px;
+  position: relative;
+}
+
+section.benefits_and_form .benefits_list li::before {
+  content: "0" counter(my-counter);
+  background-color: var(--gold);
+  border: 8px solid var(--white);
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+  border-radius: 30px;
+  padding: 10px;
+  color: var(--white);
+  font-size: 18px;
+  font-family: "YesevaOne-Regular";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 20px;
+}
+
+.form_measurer form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+  padding: 23px;
+}
+
+.form_measurer form p.form_title {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--white);
+}
+
+.form_measurer label {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form_measurer input#name_text,
+.form_measurer input#phone_num,
+.form_measurer input#email_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  /* identical to box height */
+  color: var(--white);
+  background-color: var(--black);
+  margin-bottom: 45px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form_measurer span.text {
+  color: var(--white);
+}
+
+.text_save {
+  display: flex;
+  align-items: center;
+}
+
+.text_save p {
+  margin-bottom: 25px;
 }
