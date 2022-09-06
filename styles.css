@@ -452,3 +452,61 @@ section.benefits_and_form .benefits_list li::before {
 .text_save p {
   margin-bottom: 25px;
 }
+
+section.gallery .container {
+  display: flex;
+  background-image: url("src/img/img_8.png");
+  background-repeat: no-repeat;
+  height: 850px;
+}
+
+.gallery-list h2 {
+  padding: 120px 0 40px;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+ul.view-list li {
+  font-size: 20px;
+  line-height: 38px;
+  color: var(--white);
+  padding-bottom: 15px;
+}
+
+.gallery-image {
+  position: relative;
+  width: 70%;
+}
+
+.image-1 {
+  position: absolute;
+  top: -41px;
+}
+
+.image-2 {
+  position: absolute;
+  bottom: -47px;
+}
+
+.image-3 {
+  position: absolute;
+  right: 70px;
+  top: -106px;
+}
+
+.gallery-list {
+  width: 25%;
+  padding-left: 56px;
+}
+
+.image-4 {
+  position: absolute;
+  right: 69px;
+  bottom: 26px;
+}
+
+section.gallery {
+  padding-top: 180px;
+}
