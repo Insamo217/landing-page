@@ -508,5 +508,70 @@ ul.view-list li {
 }
 
 section.gallery {
-  padding-top: 180px;
+  padding: 180px 0 100px;
+}
+
+section.reviews p.subtitle {
+  position: relative;
+  margin-bottom: 55px;
+}
+
+section.reviews p.subtitle:after {
+  content: url("src/svg/clients.svg");
+  bottom: -45px;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+section.reviews p.subtitle-reviews {
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  color: #363636;
+  padding-bottom: 50px;
+}
+
+.reviews_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-name p {
+  font-family: "YesevaOne-Regular";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--black);
+}
+
+.review-name {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.review-name img {
+  margin-right: 25px;
+  border-radius: 100%;
+}
+
+.review-item {
+  width: 370px;
+}
+
+.review-text p {
+  font-size: 13px;
+  line-height: 180%;
+  /* or 23px */
+  color: #959595;
+}
+
+.review-info {
+  margin-top: 22px;
+}
+
+.review-text {
+  padding-left: 30px;
 }
