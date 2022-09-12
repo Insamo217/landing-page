@@ -575,3 +575,60 @@ section.reviews p.subtitle-reviews {
 .review-text {
   padding-left: 30px;
 }
+
+section.form-question p.form_title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  font-family: "YesevaOne-Regular";
+  padding-bottom: 20px;
+}
+
+section.form-question .container {
+  background-color: var(--black);
+  width: 600px;
+  padding: 50px 70px;
+  text-align: center;
+}
+
+section.form-question input#name_text {
+  margin-bottom: 20px;
+}
+
+section.form-question span.text {
+  color: var(--white);
+}
+
+section.form-question label {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+section.form-question input#name_text,
+section.form-question input#phone_num,
+section.form-question textarea {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  /* identical to box height */
+  color: var(--white);
+  background-color: var(--black);
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+}
+
+.wrapper .field {
+  width: 45%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-question .first-checkbox {
+  margin-top: 40px;
+}

@@ -401,7 +401,57 @@
           </div>
         </div>
       </section>
-      <section class="form_2"></section>
+      <section class="form-question">
+        <div class="container">
+          <form action="#" method="post">
+            <p class="form_title">have any questions?</p>
+            <div class="wrapper">
+              <div class="field">
+                <label for="name_text">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name_text"
+                  placeholder="What is your name:"
+                />
+              </div>
+              <div class="field">
+                <label for="phone_num">Phone</label>
+                <input
+                  type="tel"
+                  id="phone_num"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  placeholder="Phone number:"
+                  required
+                />
+              </div>
+            </div>
+
+            <br />
+            <div class="field">
+              <label for="textarea">Question</label>
+              <textarea
+                id="textarea"
+                name="textarea"
+                placeholder="I want to know:"
+              >
+              </textarea>
+            </div>
+
+            <div class="first-checkbox">
+              <label class="label">
+                <input type="checkbox" class="checkbox" />
+                <span class="fake"></span>
+                <span class="text"
+                  >I agree to the processing of personal data.</span
+                >
+              </label>
+            </div>
+            <input type="submit" class="button" value="Submit" />
+          </form>
+        </div>
+      </section>
       <section id="contacts" class="contacts"></section>
     </main>
     <footer></footer>
