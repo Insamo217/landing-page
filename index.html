@@ -72,23 +72,11 @@
               </div>
             </div>
             <div class="nav">
-              <object
-                class="left_arrow"
-                type="image/svg+xml"
-                data="picture.svg"
-              >
-                <img src="src/svg/arrow_2.svg" />
-              </object>
+              <img class="left_arrow" src="src/svg/arrow_2.svg" />
               <div class="dot"></div>
               <div class="dot"></div>
               <div class="dot"></div>
-              <object
-                class="right_arrow"
-                type="image/svg+xml"
-                data="picture.svg"
-              >
-                <img src="src/svg/arrow_1.svg" />
-              </object>
+              <img class="right_arrow" src="src/svg/arrow_1.svg" />
             </div>
           </div>
           <div class="side_right">
@@ -106,10 +94,14 @@
       <section class="online_control">
         <div class="container_online">
           <p class="subtitle">online control</p>
-          <img src="src/img/img_3.png" alt="превью видео" />
-          <object class="play_button" type="image/svg+xml" data="picture.svg">
-            <img src="src/svg/play.svg" />
-          </object>
+          <img
+            class="online-video"
+            src="src/img/img_3.png"
+            alt="превью видео"
+          />
+
+          <img class="play_button" src="src/svg/play.svg" />
+
           <p>
             At each facility, a camera is installed that broadcasts the progress
             of work on the clock. At any time, you can go to our website and
@@ -262,9 +254,7 @@
               <input type="submit" class="button" value="Call the measurer" />
             </form>
             <div class="text_save">
-              <object class="save" type="image/svg+xml" data="picture.svg">
-                <img src="src/svg/save.svg" />
-              </object>
+              <img class="save" src="src/svg/save.svg" />
               <p>Help save 10 - 20% of the cost of materials</p>
             </div>
           </div>
@@ -331,13 +321,7 @@
                 </p>
               </div>
               <div class="review-info">
-                <object
-                  class="left_arrow"
-                  type="image/svg+xml"
-                  data="picture.svg"
-                >
-                  <img src="src/svg/review-1.svg" />
-                </object>
+                <img src="src/svg/review-1.svg" />
               </div>
             </div>
             <div class="review-item">
@@ -360,13 +344,7 @@
                 </p>
               </div>
               <div class="review-info">
-                <object
-                  class="left_arrow"
-                  type="image/svg+xml"
-                  data="picture.svg"
-                >
-                  <img src="src/svg/review-2.svg" />
-                </object>
+                <img src="src/svg/review-2.svg" />
               </div>
             </div>
             <div class="review-item">
@@ -389,13 +367,7 @@
                 </p>
               </div>
               <div class="review-info">
-                <object
-                  class="left_arrow"
-                  type="image/svg+xml"
-                  data="picture.svg"
-                >
-                  <img src="src/svg/review-3.svg" />
-                </object>
+                <img src="src/svg/review-3.svg" />
               </div>
             </div>
           </div>
@@ -452,8 +424,54 @@
           </form>
         </div>
       </section>
-      <section id="contacts" class="contacts"></section>
+      <section id="contacts" class="contacts">
+        <div class="container">
+          <h2 class="title">
+            Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928)
+            768 32 29
+          </h2>
+          <div class="social">
+            <div class="mail">
+              <a href="#"
+                ><img src="src/svg/mail.svg" alt="картинка для почты"
+              /></a>
+            </div>
+            <div class="instagram">
+              <a href="#"
+                ><img src="src/svg/insta.svg" alt="картинка для инстаграмма"
+              /></a>
+            </div>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.5668570712037!2d39.721151748058325!3d47.24461779170283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2sru!4v1663052407544!5m2!1sru!2sru"
+            width="1240"
+            height="500"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="logo_text"><p>IC "Repair Design Project"</p></div>
+        <nav class="header_menu">
+          <ul class="menu_list">
+            <li><a href="/">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="/">Measurement</a></li>
+            <li><a href="/">Team</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="phone">
+          <a href="tel:+79287683239">+7 (928) 768-32-39</a>
+        </div>
+        <button class="button">Request a call</button>
+      </div>
+    </footer>
   </body>
 </html>
