@@ -1,6 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
   margin: 0;
   padding: 0;
+  -webkit-text-decoration: auto;
   text-decoration: auto;
   font-style: normal;
   color: var(--black);
@@ -54,6 +62,7 @@ p.subtitle {
 .button {
   background: var(--gold);
   font-family: "NunitoSans-Italic";
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border-radius: 2px;
   padding: 10px 26px;
@@ -84,10 +93,50 @@ main .container {
   padding: 0 102px;
 }
 
+.form-measurer input::-webkit-input-placeholder,
+section.form-question input::-webkit-input-placeholder,
+section.form-question textarea::-webkit-input-placeholder {
+  color: var(--white);
+}
+
+.form-measurer input::-moz-placeholder,
+section.form-question input::-moz-placeholder,
+section.form-question textarea::-moz-placeholder {
+  color: var(--white);
+}
+
+.form-measurer input:-ms-input-placeholder,
+section.form-question input:-ms-input-placeholder,
+section.form-question textarea:-ms-input-placeholder {
+  color: var(--white);
+}
+
+.form-measurer input::-ms-input-placeholder,
+section.form-question input::-ms-input-placeholder,
+section.form-question textarea::-ms-input-placeholder {
+  color: var(--white);
+}
+
 .form-measurer input::placeholder,
 section.form-question input::placeholder,
 section.form-question textarea::placeholder {
   color: var(--white);
+}
+
+.form-online input::-webkit-input-placeholder {
+  color: var(--black);
+}
+
+.form-online input::-moz-placeholder {
+  color: var(--black);
+}
+
+.form-online input:-ms-input-placeholder {
+  color: var(--black);
+}
+
+.form-online input::-ms-input-placeholder {
+  color: var(--black);
 }
 
 .form-online input::placeholder {
@@ -101,16 +150,22 @@ section.form-question textarea::placeholder {
   display: none;
 }
 .fake {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 18px;
   height: 18px;
   background-color: var(--gold);
   color: #fff;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .fake::before {
   content: "\2714";
   opacity: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
 }
 .checkbox:checked + .fake::before {
@@ -131,13 +186,22 @@ section.form-question textarea::placeholder {
 
 .header .container,
 .footer .container {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 ul.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 80px;
 }
@@ -202,12 +266,17 @@ section.projects {
 }
 
 .projects .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .projects .info {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 180px 180px;
   grid-template-columns: 180px 180px;
   padding-top: 48px;
 }
@@ -227,6 +296,8 @@ section.projects {
 }
 
 .projects ul.tabs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 109px 0 50px;
 }
@@ -283,7 +354,11 @@ img.arr-right {
 
 .projects .nav {
   padding-top: 51px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -327,6 +402,8 @@ section.online-control p.subtitle {
   position: absolute;
   top: 47%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   cursor: pointer;
   width: 18%;
@@ -359,15 +436,28 @@ img.online-video {
 }
 
 .form-online form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 37px;
 }
 
 .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
@@ -411,8 +501,13 @@ section.types-of-repair {
 }
 
 section.types-of-repair .container-new {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -471,11 +566,14 @@ section.benefits-and-form .benefits {
 }
 
 section.benefits-and-form .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-image: url("src/img/img_7.png");
   background-repeat: no-repeat;
   background-position-y: 2%;
   padding-top: 65px;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -496,6 +594,7 @@ section.benefits-and-form .benefits-list li::before {
   content: "0" counter(my-counter);
   background-color: var(--gold);
   border: 8px solid var(--white);
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
   border-radius: 30px;
   padding: 10px;
@@ -513,9 +612,15 @@ section.benefits-and-form .benefits-list li::before {
 /* FORMS */
 
 .form-measurer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background-color: var(--black);
+  -webkit-box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
   padding: 27px 48px 16px;
   width: 415px;
@@ -571,7 +676,11 @@ section.benefits-and-form .benefits-list li::before {
 }
 
 .text-save {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 22px;
   margin-left: 10px;
@@ -591,6 +700,8 @@ section.benefits-and-form .benefits-list li::before {
 /* GALLERY */
 
 section.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-image: url("src/img/img_8.png");
   background-repeat: no-repeat;
@@ -598,6 +709,7 @@ section.gallery {
   padding: 0px 0px 126px;
   margin-top: 214px;
   background-size: cover;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
 }
@@ -615,6 +727,8 @@ ul.view-list li.active {
   color: var(--gold);
   border-bottom: 1px solid;
   padding-bottom: 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -687,8 +801,13 @@ section.reviews p.subtitle-reviews {
 }
 
 .reviews-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -701,7 +820,11 @@ section.reviews p.subtitle-reviews {
 }
 
 .review-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-bottom: 19px;
   padding-left: 22px;
@@ -792,7 +915,11 @@ section.form-question textarea {
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -805,6 +932,20 @@ section.form-question textarea {
 
 section.contacts {
   background-size: cover;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(3.47%, rgba(24, 24, 24, 0.9)),
+      to(rgba(24, 24, 24, 0.72))
+    ),
+    url("src/img/img_16.jpg");
+  background-image: -o-linear-gradient(
+      top,
+      rgba(24, 24, 24, 0.9) 3.47%,
+      rgba(24, 24, 24, 0.72) 100%
+    ),
+    url("src/img/img_16.jpg");
   background-image: linear-gradient(
       180deg,
       rgba(24, 24, 24, 0.9) 3.47%,
@@ -829,7 +970,11 @@ section.contacts h2 {
 }
 
 section.contacts .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 90px;
   margin: auto;
@@ -905,6 +1050,8 @@ section.contacts .social {
   }
 
   .projects .container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
   }
@@ -924,6 +1071,8 @@ section.contacts .social {
   }
 
   .projects .info {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
@@ -948,6 +1097,9 @@ section.contacts .social {
 
   .form-online form {
     padding: 0 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -960,6 +1112,22 @@ section.contacts .social {
     background-color: var(--black);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     width: 100%;
+  }
+
+  .form-online input::-webkit-input-placeholder {
+    color: var(--white);
+  }
+
+  .form-online input::-moz-placeholder {
+    color: var(--white);
+  }
+
+  .form-online input:-ms-input-placeholder {
+    color: var(--white);
+  }
+
+  .form-online input::-ms-input-placeholder {
+    color: var(--white);
   }
 
   .form-online input::placeholder,
@@ -1002,6 +1170,8 @@ section.contacts .social {
   section.gallery {
     margin-top: 10px;
     background: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 0px;
   }
@@ -1037,6 +1207,8 @@ section.contacts .social {
   }
 
   section.types-of-repair .container-new {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -1052,18 +1224,25 @@ section.contacts .social {
 
   section.contacts {
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 0px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     background: var(--black);
   }
 
   section.contacts h2 {
+    -webkit-box-ordinal-group: 21;
+    -ms-flex-order: 20;
     order: 20;
     padding: 40px;
   }
 
   section.contacts .social {
+    -webkit-box-ordinal-group: 31;
+    -ms-flex-order: 30;
     order: 30;
   }
 
@@ -1082,6 +1261,8 @@ section.contacts .social {
   section.contacts .map {
     width: 95%;
     padding: 0 18px;
+    -webkit-box-ordinal-group: 11;
+    -ms-flex-order: 10;
     order: 10;
   }
 }
