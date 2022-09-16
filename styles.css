@@ -31,6 +31,7 @@ a {
   --gold: #e3b873;
   --white: #ffffff;
   --black: #131313;
+  --grey: #363636;
 }
 
 h2.title {
@@ -67,15 +68,17 @@ p.subtitle {
   color: var(--gold);
 }
 
+main .container {
+  padding-left: 133px;
+}
+
 .container {
-  /* width: 1256px; */
   max-width: 1440px;
   margin: auto;
   padding: 0px 92px;
 }
 
 .container-new {
-  /* width: 1240px; */
   max-width: 1440px;
   margin: auto;
   padding: 0 102px;
@@ -91,10 +94,6 @@ section.form-question textarea::placeholder {
   color: var(--black);
 }
 
-main .container {
-  padding-left: 133px;
-}
-
 .label {
   cursor: pointer;
 }
@@ -105,7 +104,7 @@ main .container {
   display: inline-flex;
   width: 18px;
   height: 18px;
-  background: #e3b873;
+  background-color: var(--gold);
   color: #fff;
   justify-content: center;
 }
@@ -143,6 +142,10 @@ ul.menu-list {
   margin-left: 80px;
 }
 
+.logo-text {
+  padding: 24px 0;
+}
+
 ul.menu-list li {
   margin-right: 55px;
 }
@@ -152,7 +155,7 @@ ul.menu-list li {
   color: var(--gold);
 }
 
-/* START */
+/* START SCENE */
 
 .start {
   background-image: url(/src/img/img_1.png);
@@ -200,16 +203,13 @@ section.projects {
 
 .projects .container {
   display: flex;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
   flex-wrap: wrap;
 }
 
 .projects .info {
   display: grid;
   grid-template-columns: 180px 180px;
-  padding-top: 53px;
+  padding-top: 48px;
 }
 
 .projects h2 {
@@ -238,6 +238,27 @@ section.projects {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 19px;
+  cursor: pointer;
+}
+
+.mobile-slider {
+  display: none;
+}
+
+img.arr-left {
+  width: 25%;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  cursor: pointer;
+}
+
+img.arr-right {
+  width: 25%;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  cursor: pointer;
 }
 
 .projects ul.tabs-list li.active {
@@ -249,6 +270,7 @@ section.projects {
 .projects p {
   color: var(--white);
   font-size: 14px;
+  line-height: 27px;
 }
 
 .projects .side-left {
@@ -256,7 +278,7 @@ section.projects {
 }
 
 .info .item {
-  padding-bottom: 28px;
+  padding-bottom: 18px;
 }
 
 .projects .nav {
@@ -303,10 +325,15 @@ section.online-control p.subtitle {
 
 .container-online .play-button {
   position: absolute;
-  top: 34%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  width: 18%;
+}
+
+.online {
+  position: relative;
 }
 
 section.online-control {
@@ -323,7 +350,6 @@ section.online-control P {
 }
 
 img.online-video {
-  position: relative;
   margin-bottom: 22px;
 }
 
@@ -355,7 +381,7 @@ img.online-video {
 .form-online input#phone-num {
   font-size: 14px;
   line-height: 23px;
-  color: #363636;
+  color: var(--grey);
   width: 231px;
   border: none;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
@@ -374,14 +400,14 @@ section.types-of-repair p.subtitle {
 
 section.types-of-repair p.subtitle:after {
   content: url("src/svg/repair.svg");
-  bottom: -45px;
+  top: 35px;
   left: 0;
   right: 0;
   position: absolute;
 }
 
 section.types-of-repair {
-  padding-bottom: 260px;
+  padding-bottom: 42px;
 }
 
 section.types-of-repair .container-new {
@@ -392,6 +418,7 @@ section.types-of-repair .container-new {
 
 section.types-of-repair .type {
   position: relative;
+  height: 645px;
 }
 
 section.types-of-repair .info-type {
@@ -420,7 +447,7 @@ p.info-title {
   font-family: "YesevaOne-Regular";
   font-size: 18px;
   line-height: 25px;
-  color: #363636;
+  color: var(--grey);
   padding-bottom: 7px;
 }
 
@@ -596,39 +623,38 @@ ul.view-list li {
   line-height: 38px;
   color: var(--white);
   margin-bottom: 12px;
+  cursor: pointer;
 }
 
-.gallery-image {
-  /* position: relative; */
-  /* width: 66%; */
-}
-
-.image-1 {
+section.gallery .image-1 {
   position: absolute;
   top: -41px;
-  /* left: 0px; */
   right: 499px;
 }
 
-.image-2 {
+section.gallery .image-1 img.arr-left,
+section.gallery .image-1 img.arr-right {
+  display: none;
+}
+
+section.gallery .image-2 {
   position: absolute;
   bottom: -40px;
   right: 499px;
 }
 
-.image-3 {
+section.gallery .image-3 {
   position: absolute;
   right: 101px;
   top: -115px;
 }
 
 .gallery-list {
-  /* width: 756px; */
   padding-left: 97px;
   padding-top: 17px;
 }
 
-.image-4 {
+section.gallery .image-4 {
   position: absolute;
   right: 101px;
   bottom: 39px;
@@ -644,7 +670,7 @@ section.reviews p.subtitle {
 
 section.reviews p.subtitle:after {
   content: url("src/svg/clients.svg");
-  bottom: -45px;
+  top: 35px;
   left: 0;
   right: 0;
   position: absolute;
@@ -654,7 +680,7 @@ section.reviews p.subtitle-reviews {
   font-size: 18px;
   line-height: 29px;
   text-align: center;
-  color: #363636;
+  color: var(--grey);
   padding-bottom: 70px;
   width: 376px;
   margin: auto;
@@ -730,7 +756,6 @@ section.form-question .container {
   margin-top: 100px;
   left: 0;
   right: 0;
-  /* top: 0px; */
 }
 
 section.form-question .button {
@@ -756,7 +781,6 @@ section.form-question textarea {
   font-size: 14px;
   line-height: 23px;
   /* identical to box height */
-  color: var(--white);
   background-color: var(--black);
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -813,7 +837,251 @@ section.contacts .social {
   padding-bottom: 37px;
 }
 
+.map {
+  width: 900px;
+  margin: auto;
+}
+
 .map iframe {
   margin: auto;
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .container,
+  .container-new {
+    padding: 0px 18px;
+  }
+
+  .form-online input.button,
+  .form-online,
+  section.contacts h2,
+  .wrapper .field,
+  .field,
+  img.online-video,
+  .mobile-slider img.main-img,
+  .start .content {
+    width: 100%;
+  }
+
+  ul.menu-list,
+  .header button.button,
+  .side-right,
+  .projects .nav,
+  section.benefits-and-form,
+  section.reviews,
+  section.gallery .image-2,
+  section.gallery .image-3,
+  section.gallery .image-4,
+  ul.view-list,
+  footer.footer {
+    display: none;
+  }
+
+  .phone a {
+    color: var(--white);
+  }
+
+  main .container {
+    padding-left: 15px;
+  }
+
+  .start .button {
+    display: block;
+    width: 100%;
+  }
+
+  .start .button.submit {
+    margin-left: 0px;
+  }
+
+  .start {
+    padding: 85px 0 60px;
+  }
+
+  .projects h2 {
+    margin: auto;
+    padding: 60px 0 25px;
+  }
+
+  .projects .container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  section.projects {
+    padding-bottom: 40px;
+  }
+
+  .projects .side-left {
+    margin-right: 0px;
+  }
+
+  .mobile-slider {
+    display: block;
+    margin-top: 60px;
+    position: relative;
+  }
+
+  .projects .info {
+    justify-content: space-between;
+  }
+
+  .container-online {
+    position: static;
+    background-color: var(--black);
+    width: auto;
+    padding-bottom: 50px;
+  }
+
+  section.online-control P {
+    width: auto;
+    color: var(--white);
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+
+  .form-online input.button {
+    padding: 20px 76px;
+    margin: 80px 0 30px;
+  }
+
+  .form-online form {
+    padding: 0 15px;
+    flex-direction: column;
+  }
+
+  .form-online .field {
+    margin-top: 55px;
+  }
+
+  .form-online input#name-text,
+  .form-online input#phone-num {
+    background-color: var(--black);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+  }
+
+  .form-online input::placeholder,
+  .form-online span.text {
+    color: var(--white);
+  }
+
+  section.online-control {
+    padding-bottom: 0px;
+  }
+
+  section.types-of-repair .info-type {
+    margin: 0;
+  }
+
+  section.types-of-repair {
+    padding-bottom: 0px;
+  }
+
+  .gallery-image {
+    position: relative;
+  }
+
+  section.gallery .image-1 {
+    position: static;
+  }
+
+  section.gallery .image-1 img.arr-right,
+  section.gallery .image-1 img.arr-left {
+    display: block;
+    top: 200px;
+  }
+
+  .gallery-list h2 {
+    padding: 0px 0px 32px;
+    text-align: center;
+    margin: auto;
+  }
+
+  section.gallery {
+    margin-top: 10px;
+    background: none;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  section.types-of-repair p.subtitle {
+    margin: 30px 0 70px;
+  }
+
+  section.form-question .container {
+    width: auto;
+    padding: 350px 18px 50px;
+    z-index: -1;
+    position: static;
+  }
+
+  section.form-question .first-checkbox {
+    text-align: left;
+    margin: 24px 0 65px;
+  }
+
+  section.form-question .button {
+    display: block;
+    width: 100%;
+  }
+
+  section.form-question input#name-text,
+  section.form-question input#phone-num {
+    margin-bottom: 60px;
+  }
+
+  .wrapper {
+    display: block;
+  }
+
+  section.types-of-repair .container-new {
+    justify-content: center;
+  }
+
+  section.gallery {
+    height: 300px;
+    display: block;
+    text-align: center;
+  }
+
+  .gallery-list {
+    padding-left: 0px;
+  }
+
+  section.contacts {
+    padding: 0;
+    display: flex;
+    margin-top: 0px;
+    flex-wrap: wrap;
+    background: var(--black);
+  }
+
+  section.contacts h2 {
+    order: 20;
+    padding: 40px;
+  }
+
+  section.contacts .social {
+    order: 30;
+  }
+
+  section.form-question p.form-title {
+    padding-bottom: 52px;
+  }
+
+  section.contacts .social img {
+    width: 50px;
+  }
+
+  section.contacts .social {
+    width: 120px;
+  }
+
+  section.contacts .map {
+    width: 95%;
+    padding: 0 18px;
+    order: 10;
+  }
 }
