@@ -22,7 +22,7 @@ a {
 
 @font-face {
   font-family: "NunitoSans-Regular";
-  src: url(/src/fonts/NunitoSans-Regular.ttf);
+  src: url(src/fonts/NunitoSans-Regular.ttf);
 }
 @font-face {
   font-family: "NunitoSans-Italic";
@@ -222,7 +222,7 @@ ul.menu-list li {
 /* START SCENE */
 
 .start {
-  background-image: url(/src/img/img_1.png);
+  background-image: url(src/img/img_1.png);
   padding: 191px 0 179px;
 }
 
