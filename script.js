@@ -1,20 +1,20 @@
 let cards = [
   {
-    img: "/src/img/img_slider_1.jpg",
+    img: "src/img/img_slider_1.jpg",
     city: "Rostov-on-Don <br> LCD admiral",
     area: "81 m2",
     repair: "3.5 months",
     cost: "Upon request",
   },
   {
-    img: "/src/img/img_slider_2.jpg",
+    img: "src/img/img_slider_2.jpg",
     city: "Sochi Thieves",
     area: "105 m2",
     repair: "4 months",
     cost: "Upon request",
   },
   {
-    img: "/src/img/img_slider_3.jpg",
+    img: "src/img/img_slider_3.jpg",
     city: "Rostov-on-Don Patriotic",
     area: "93 m2",
     repair: "3 months",
