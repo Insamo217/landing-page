@@ -363,12 +363,16 @@ img.arr-right {
 }
 
 .dot {
-  background-color: var(--white);
+  background-color: grey;
   width: 10px;
   height: 10px;
   border-radius: 10px;
   cursor: pointer;
   margin: 0px 8px;
+}
+
+.dot.active {
+  background-color: var(--white);
 }
 
 .left-arrow {
@@ -379,6 +383,14 @@ img.arr-right {
 .right-arrow {
   margin-left: 20px;
   cursor: pointer;
+}
+
+.slider-images {
+  background-image: url("src/img/img_slider_1.jpg");
+  width: 100%;
+  height: 480px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* ONLINE-VIDEO */

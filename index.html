@@ -72,20 +72,22 @@
             <div class="info">
               <div class="item">
                 <p class="info-title">City:</p>
-                <p>Rostov-on-Don</p>
-                <p>LCD admiral</p>
+                <p id="city">
+                  Rostov-on-Don <br />
+                  LCD admiral
+                </p>
               </div>
               <div class="item">
                 <p class="info-title">Apartment area:</p>
-                <p>81 m2</p>
+                <p id="area">81 m2</p>
               </div>
               <div class="item">
                 <p class="info-title">Repair time:</p>
-                <p>3.5 months</p>
+                <p id="repair">3.5 months</p>
               </div>
               <div class="item">
                 <p class="info-title">Repair Cost:</p>
-                <p>Upon request</p>
+                <p id="cost">Upon request</p>
               </div>
             </div>
             <div class="nav">
@@ -94,9 +96,9 @@
                 src="src/svg/arrow_2.svg"
                 alt="стрелка левая"
               />
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
+              <div class="dot active" onclick="currentSlide(0)"></div>
+              <div class="dot" onclick="currentSlide(1)"></div>
+              <div class="dot" onclick="currentSlide(2)"></div>
               <img
                 class="right-arrow"
                 src="src/svg/arrow_1.svg"
@@ -107,12 +109,16 @@
           <div class="side-right">
             <div class="tabs">
               <ul class="tabs-list">
-                <li class="active">Rostov-on-Don, Admiral</li>
-                <li>Sochi Thieves</li>
-                <li>Rostov-on-Don Patriotic</li>
+                <li class="tab active" onclick="currentSlide(0)">
+                  Rostov-on-Don, Admiral
+                </li>
+                <li class="tab" onclick="currentSlide(1)">Sochi Thieves</li>
+                <li class="tab" onclick="currentSlide(2)">
+                  Rostov-on-Don Patriotic
+                </li>
               </ul>
             </div>
-            <img src="src/img/img_2.jpg" alt="фотография проекта" />
+            <div class="slider-images"></div>
           </div>
         </div>
       </section>
@@ -547,5 +553,6 @@
         <button class="button">Request a call</button>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
